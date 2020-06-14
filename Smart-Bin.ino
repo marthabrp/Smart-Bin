@@ -1,8 +1,7 @@
 #include <Servo.h>
-
 int distancia = 0;
-
 long readUltrasonicDistance(int triggerPin, int echoPin)
+
 {
   pinMode(triggerPin, OUTPUT);  // Clear the trigger
   digitalWrite(triggerPin, LOW);
@@ -17,11 +16,9 @@ long readUltrasonicDistance(int triggerPin, int echoPin)
 }
 
 Servo servo_9;
-
 void setup()
 {
   servo_9.attach(9);
-
 }
 
 void loop()
