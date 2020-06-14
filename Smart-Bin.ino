@@ -28,10 +28,10 @@ void loop()
 {
   distancia = 0.01723 * readUltrasonicDistance(7, 6);
   servo_9.write(0);
-  delay(300); // Wait for 300 millisecond(s)
+  delay(3000); // Wait for 3000 millisecond(s)
   while (distancia <= 20) {
     servo_9.write(180);
-    delay(300); // Wait for 300 millisecond(s)
+    delay(3000); // Wait for 3000 millisecond(s)
     distancia = 0.01723 * readUltrasonicDistance(7, 6);
   }
 }
